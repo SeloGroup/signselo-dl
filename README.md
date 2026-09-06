@@ -37,7 +37,7 @@ SignSelo provides a **Zero-Extension, Zero-Java** digital signature architecture
 
 ### 🍏 macOS
 * **[install.sh](./macos/install.sh)** — Automated LaunchDaemon installer for macOS.
-* **[ge.selo.signselo.plist](./macos/ge.selo.signselo.plist)** — macOS LaunchAgent daemon definition.
+* **[com.signselo.agent.plist](./macos/com.signselo.agent.plist)** — macOS LaunchAgent daemon definition.
 
 ### 📱 Android & iOS (Mobile Companions)
 * **Android**: [SignSelo Companion APK Guide](./android/README.md) (NFC ISO-7816 Georgian ID card reader).
@@ -74,5 +74,5 @@ SignSelo was architected from the ground up for strict coexistence with municipa
 
 Developed and maintained by **Selo Group**.  
 * **Core Private Repository**: [github.com/SeloGroup/signselo](https://github.com/SeloGroup/signselo)  
-* **Support & Web Portal**: [signselo.com](https://signselo.com)  
-* **Official Portal (Gov / MSDA)**: [sign.selo.ge](https://sign.selo.ge)
+* **Official International Portal**: [signselo.com](https://signselo.com)  
+* **Documentation & Releases**: [github.com/SeloGroup/signselo-dl](https://github.com/SeloGroup/signselo-dl)

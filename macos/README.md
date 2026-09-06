@@ -13,7 +13,7 @@ curl -fsSL https://raw.githubusercontent.com/SeloGroup/signselo-dl/main/macos/in
 This installs:
 * Binary: `/usr/local/bin/signselo-agent`
 * Configuration: `/etc/signselo/config.toml`
-* Daemon: `/Library/LaunchDaemons/ge.selo.signselo.plist`
+* Daemon: `/Library/LaunchDaemons/com.signselo.agent.plist`
 
 ---
 
@@ -27,8 +27,8 @@ sudo launchctl list | grep signselo
 tail -f /var/log/signselo.log
 
 # Stop daemon
-sudo launchctl unload -w /Library/LaunchDaemons/ge.selo.signselo.plist
+sudo launchctl unload -w /Library/LaunchDaemons/com.signselo.agent.plist
 
 # Start daemon
-sudo launchctl load -w /Library/LaunchDaemons/ge.selo.signselo.plist
+sudo launchctl load -w /Library/LaunchDaemons/com.signselo.agent.plist
 ```

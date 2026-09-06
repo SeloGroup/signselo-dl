@@ -7,7 +7,7 @@ Native iOS companion app utilizing Apple's `CoreNFC` framework for Georgian Citi
 * **CoreNFC ISO-7816 Tag Reader**: Directly sends APDU commands to Georgian ID cards.
 * **Biometric Guard**: Face ID / Touch ID protects session entry before prompting for smart card PIN2.
 * **Universal Links & DeepLink Protocol**:
-  * Universal Link: `https://sign.selo.ge/m/s/:sessionId`
+  * Universal Link: `https://signselo.com/m/s/:sessionId`
   * URI Scheme: `signselo://mobile-sign?session=:sessionId&hub=:hubUrl`
 
 ---

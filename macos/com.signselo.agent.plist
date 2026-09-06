@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>ge.selo.signselo</string>
+    <string>com.signselo.agent</string>
     <key>ProgramArguments</key>
     <array>
         <string>/usr/local/bin/signselo-agent</string>

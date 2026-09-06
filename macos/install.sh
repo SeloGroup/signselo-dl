@@ -7,7 +7,7 @@ set -euo pipefail
 
 HUB_URL="${HUB_URL:-https://signselo.com}"
 INSTALL_BIN="/usr/local/bin/signselo-agent"
-PLIST_DST="/Library/LaunchDaemons/ge.selo.signselo.plist"
+PLIST_DST="/Library/LaunchDaemons/com.signselo.agent.plist"
 
 echo -e "\033[1;36m==========================================================\033[0m"
 echo -e "\033[1;36m  SignSelo Native Agent v3.0 - macOS Setup\033[0m"
@@ -61,7 +61,7 @@ cat <<EOF > "${PLIST_DST}"
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>ge.selo.signselo</string>
+    <string>com.signselo.agent</string>
     <key>ProgramArguments</key>
     <array>
         <string>${INSTALL_BIN}</string>
