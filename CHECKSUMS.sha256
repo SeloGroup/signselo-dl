@@ -1,0 +1,5 @@
+# SignSelo Distribution Hub SHA-256 Checksums
+# Format: <sha256-hash>  <relative-path>
+
+3a947fd10c7bf85b46f70e03d6e31dc86add1c00a2894ce459a997ecb387e7f6  windows/SignSelo-Agent.exe
+e5367244585f82a7d68d3062a17eab55633b68636f737722ba3c40049f53eec0  windows/SignSelo-Agent-v3.0.0-win64.zip

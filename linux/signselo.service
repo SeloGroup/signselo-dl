@@ -1,0 +1,22 @@
+[Unit]
+Description=SignSelo Enterprise Native Signing Agent
+Documentation=https://github.com/SeloGroup/signselo
+After=network.target pcscd.service
+Wants=pcscd.service
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/local/bin/signselo-agent --config /etc/signselo/config.toml
+Restart=always
+RestartSec=5s
+
+# Security Hardening
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/var/log/signselo /etc/signselo
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
