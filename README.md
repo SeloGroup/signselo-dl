@@ -1,14 +1,15 @@
-# SignSelo Client Distribution Hub (signselo-dl)
+# SignSelo 3 Client Distribution Hub (signselo-dl)
 
 [![Selo Group](https://img.shields.io/badge/Selo_Group-Enterprise_Security-0ea5e9.svg)](https://selo.ge)
+[![Edition](https://img.shields.io/badge/Edition-SignSelo_3_(Gen_3)-8b5cf6.svg)](https://signselo.com)
 [![Platforms](https://img.shields.io/badge/Platforms-Windows%20|%20Linux%20|%20macOS%20|%20Android%20|%20iOS-22c55e.svg)](#supported-platforms)
 [![Rust](https://img.shields.io/badge/Rust-Native_Daemon_v3.0-orange.svg)](https://github.com/SeloGroup/signselo)
 [![eID & SmartCard](https://img.shields.io/badge/eID-Georgian_Citizen_Card-blue.svg)](https://signselo.com)
 [![License](https://img.shields.io/badge/License-Proprietary-red.svg)](#license)
 
-Official distribution repository for **SignSelo Next-Gen Client Applications, Daemons, and Mobile Companions**. 
+Official distribution repository for **SignSelo 3 Enterprise (Gen 3) Client Applications, Daemons, and Mobile Companions**. 
 
-SignSelo provides a **Zero-Extension, Zero-Java** digital signature architecture, allowing seamless integration with Georgian eID cards, USB tokens, and smart card hardware across all major desktop and mobile operating systems.
+**SignSelo 3 (Gen 3)** represents the third-generation cryptographic signature ecosystem: a **Zero-Extension, Zero-Java** architecture featuring native asynchronous Rust daemons, outbound-only secure WSS tunnels, and direct hardware smart card (eID / USB token / NFC) integration across all major desktop and mobile operating systems.
 
 ---
 
