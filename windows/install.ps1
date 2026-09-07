@@ -11,7 +11,10 @@
 [CmdletBinding()]
 param(
     [string]$InstallDir = "$env:ProgramFiles\SignSelo",
-    [string]$HubUrl = "https://signselo.com",
+    [string]$HubUrl = "wss://signselo.com/api/connector/stream",
+    [string]$NodeToken = "",
+    [string]$AutoPin = "",
+    [switch]$IsStampCard = $true,
     [switch]$NoService
 )
 
@@ -67,20 +70,15 @@ $configPath = Join-Path $InstallDir "config.toml"
 if (-not (Test-Path $configPath)) {
     Write-Host "[4/5] Generating config.toml..." -ForegroundColor Green
     $configContent = @"
-[agent]
-name = "$env:COMPUTERNAME-SignSelo"
-ws_url = "$HubUrl/api/connector/stream"
+# SignSelo Next-Gen Production Configuration
+hub_url = "$HubUrl"
+node_token = "$NodeToken"
+is_stamp_card = $($IsStampCard.ToString().ToLower())
 reconnect_interval_secs = 5
-max_reconnect_interval_secs = 60
-ping_interval_secs = 30
-
-[card]
-auto_detect = true
-pnp_interval_ms = 1000
-
-[security]
-tls_verify = true
 "@
+    if ($AutoPin) {
+        $configContent += "`nauto_pin = `"$AutoPin`""
+    }
     Set-Content -Path $configPath -Value $configContent -Encoding UTF8
 }
 
